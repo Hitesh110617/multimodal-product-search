@@ -1,0 +1,22 @@
+# Core ML & Deep Learning
+torch>=2.0.0
+torchvision>=0.15.0
+sentence-transformers>=2.2.0
+transformers>=4.30.0
+faiss-cpu>=1.7.0
+
+# Dataset Access & Data Processing
+datasets>=2.14.0
+numpy>=1.24.0
+pandas>=2.0.0
+Pillow>=9.0.0
+scikit-learn>=1.2.0
+
+# Web Application
+streamlit>=1.20.0
+
+# Testing & Utilities
+pytest>=7.0.0
+tqdm>=4.60.0
+joblib>=1.2.0
+matplotlib>=3.7.0

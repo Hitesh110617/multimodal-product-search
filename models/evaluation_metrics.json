@@ -1,0 +1,91 @@
+{
+  "metadata": {
+    "dataset_name": "ashraq/fashion-product-images-small",
+    "dataset_source": "Hugging Face (Kaggle/Myntra)",
+    "catalog_size": 10000,
+    "eval_query_count": 1000,
+    "embedding_model": "clip-ViT-B-32",
+    "embedding_dim": 512,
+    "timestamp": "2026-09-12 01:13:55"
+  },
+  "ablation_comparison": {
+    "IndexFlatIP (Exact)": {
+      "text_to_image": {
+        "num_queries": 1000,
+        "instance_recall": {
+          "Recall@1": 0.063,
+          "Recall@5": 0.205,
+          "Recall@10": 0.3
+        },
+        "semantic_recall": {
+          "Semantic_Recall@1": 0.718,
+          "Semantic_Recall@5": 0.912,
+          "Semantic_Recall@10": 0.952
+        },
+        "mrr": 0.1266,
+        "ndcg_at_10": 0.1672,
+        "search_latency_ms": {
+          "mean": 2.91,
+          "median": 2.75,
+          "p95": 4.52,
+          "p99": 5.79
+        }
+      },
+      "image_to_image": {
+        "num_queries": 500,
+        "recall": {
+          "Recall@1": 0.79,
+          "Recall@5": 0.936,
+          "Recall@10": 0.958
+        },
+        "mrr": 0.8526,
+        "ndcg_at_10": 0.8654,
+        "search_latency_ms": {
+          "mean": 2.59,
+          "median": 2.29,
+          "p95": 4.16,
+          "p99": 5.01
+        }
+      }
+    },
+    "IndexHNSWFlat (ANN)": {
+      "text_to_image": {
+        "num_queries": 1000,
+        "instance_recall": {
+          "Recall@1": 0.063,
+          "Recall@5": 0.205,
+          "Recall@10": 0.294
+        },
+        "semantic_recall": {
+          "Semantic_Recall@1": 0.718,
+          "Semantic_Recall@5": 0.9,
+          "Semantic_Recall@10": 0.937
+        },
+        "mrr": 0.1249,
+        "ndcg_at_10": 0.1645,
+        "search_latency_ms": {
+          "mean": 0.25,
+          "median": 0.21,
+          "p95": 0.44,
+          "p99": 0.76
+        }
+      },
+      "image_to_image": {
+        "num_queries": 500,
+        "recall": {
+          "Recall@1": 0.79,
+          "Recall@5": 0.936,
+          "Recall@10": 0.958
+        },
+        "mrr": 0.8526,
+        "ndcg_at_10": 0.8656,
+        "search_latency_ms": {
+          "mean": 0.16,
+          "median": 0.16,
+          "p95": 0.24,
+          "p99": 0.36
+        }
+      }
+    }
+  }
+}

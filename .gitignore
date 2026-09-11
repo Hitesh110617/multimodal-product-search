@@ -1,0 +1,34 @@
+﻿# Python artifacts
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+
+# Environments
+.env
+.venv/
+venv/
+ENV/
+env/
+
+# Testing & Coverage
+.pytest_cache/
+.coverage
+htmlcov/
+
+# IDE & Editor files
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# OS artifacts
+.DS_Store
+Thumbs.db
+
+# Old mock prototyping data (superseded by real 10K dataset)
+data/product_images/
+data/sample_products.csv
+models/product_embeddings.npy
+models/product_ids.npy
+models/product_index.index
